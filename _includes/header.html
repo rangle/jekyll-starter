@@ -1,0 +1,21 @@
+
+<header>
+  <h2>
+    {% if page.header_title %}
+    {{ page.header_title }}
+    {% else %}
+    {{ site.title }}
+    {% endif %}
+  </h2>
+
+  {% if page.header_tagline or site.tagline %}
+  <p class="highlight">
+    {% if page.header_tagline %}
+    {{ page.header_tagline }}
+    {% else %}
+    {{ site.tagline }}
+    {% endif %}
+  </p>
+  {% endif %}
+
+</header>

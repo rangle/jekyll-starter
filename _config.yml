@@ -1,0 +1,34 @@
+---
+title: Jekyll Starter
+timezone: America/New_York
+collections:
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
+include:
+  - dist
+exclude:
+  - assets
+  - circle.yml
+  - Gemfile*
+  - gulpfile*
+  - LICENSE
+  - node_modules
+  - package.json
+  - src
+  - npm-debug.log
+port: 3000
+tagline: A Gulp based Jekyll starter.

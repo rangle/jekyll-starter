@@ -1,0 +1,74 @@
+
+:root {
+  --baseSpacing1: 1rem;
+  --baseSpacing2: 1.5rem;
+  --baseSpacing3: 2rem;
+  --baseSpacing4: 2.5rem;
+
+  --siteOffset: 1.875rem;
+
+  --baseFontSize: 1rem;
+
+  --sansFont:
+    -apple-system,
+    '.SFNSText-Regular',
+    'San Francisco',
+    'Roboto',
+    'Segoe UI',
+    'Helvetica Neue',
+    'Lucida Grande',
+    sans-serif;
+
+  --header1: calc(var(--baseFontSize) + 0.75);
+  --header2: calc(var(--baseFontSize) + 0.625);
+  --header3: calc(var(--baseFontSize) + 0.5);
+  --header4: calc(var(--baseFontSize) + 0.25);
+  --header5: var(--baseFontSize);
+  --header6: calc(var(--baseFontSize) - 0.125);
+
+  --highlight-color-primary: #1ee48f;
+  --dark-theme-color-primary: #1c1c24;
+  --dark-theme-offwhite: #e3e3e3;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--dark-theme-color-primary);
+  color: var(--dark-theme-offwhite);
+  font-family: var(--sansFont);
+  padding: var(--siteOffset);
+}
+
+h1 { font-size: var(--header1); }
+h2 { font-size: var(--header2); }
+h3 { font-size: var(--header3); }
+h4 { font-size: var(--header4); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sansFont);
+}
+
+p {
+  font-size: var(--base-font-size);
+}
+
+p.highlight {
+  color: var(--highlight-color-primary);
+}
+
+a[href] {
+  color: var(--highlight-color-primary);
+  text-decoration: underline;
+}
+
+.mt4 { margin-top: var(--baseSpacing4); }
