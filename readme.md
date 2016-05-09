@@ -4,7 +4,7 @@ Installation
 gem install bundler
 ```
 
-Only Node 4.x and 5.x are supported at this time.
+You'll need to be using Node v4+.
 
 ```bash
 npm install
