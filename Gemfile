@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 
 # Jekyll
 gem 'jekyll', require: true
-gem 'redcarpet', require: true
+gem 'redcarpet', '>= 3.5.1', require: true
 
 # Generates a sitemap.xml
 gem 'jekyll-sitemap'
